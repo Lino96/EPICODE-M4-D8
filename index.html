@@ -48,26 +48,26 @@
 
       </div> 
       <hr>
-      <form class="row">
+      <form class="row" onsubmit="addProduct(event)">
         <div class="col-2">
           <label>Name</label>
-          <input type="text" class="form-control" placeholder="Samsung Galaxy S10 Cellphone">
+          <input required id ="name" type="text" class="form-control" placeholder="Samsung Galaxy S10 Cellphone">
         </div>
         <div class="col-2">
           <label>Description</label>
-          <input type="text" class="form-control" placeholder="An invincible Cellphone">
+          <input required id ="description" type="text" class="form-control" placeholder="An invincible Cellphone">
         </div>
         <div class="col-2">
           <label>Brand</label>
-          <input type="text" class="form-control" placeholder="e.g. Samsung">
+          <input required id="brand" type="text" class="form-control" placeholder="e.g. Samsung">
         </div>
         <div class="col-2">
           <label>Image</label>
-          <input type="text" class="form-control" placeholder="Insert the URL here">
+          <input required id ="image" type="text" class="form-control" placeholder="Insert the URL here">
         </div>
         <div class="col-2">
           <label>Price</label>
-          <input type="text" class="form-control" placeholder="EUR">
+          <input required id ="price" type="text" class="form-control" placeholder="EUR">
         </div>
         
 
