@@ -1,6 +1,7 @@
 //token per autorizzazione accesso: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI2ZDgxNzBiZGRlZDAwMTg5YTc5NDAiLCJpYXQiOjE2OTcwNDQ1MDMsImV4cCI6MTY5ODI1NDEwM30._TP5YFCbRw75Bl49Ibe-6aEPI2t7TqVA3KPRtx9BP-Q'//
 
 const row = document.querySelector("#main-row")
+
 const name = document.querySelector("#name")
 const description = document.querySelector("#description")
 const brand = document.querySelector("#brand")
