@@ -21,7 +21,7 @@ async function getProduct() {
 
 async function addProduct(event) {
     event.preventDefault()
-    const response = await fetch("https://striveschool-api.herokuapp.com/api/product/", {
+    const response = await fetch("https://striveschool-api.herokuapp.com/api/product/",{
         
         method: "POST",
         body: JSON.stringify({
