@@ -58,7 +58,7 @@ row.innerHTML = data.map(({ name, description, brand, image, price }) => `
         ${brand}
     </div>        
     <div class="col-2">
-        ${image}
+        <img src="${image}">
     </div>  
     <div class="col-2">
        EUR ${price}
