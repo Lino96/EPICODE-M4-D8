@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Marketplace</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   </head>
   <body>
     <div class="container mt-5">
@@ -12,7 +13,7 @@
 
       </div> 
       <hr>
-      <form class="row" onsubmit="addProduct(event)">
+      <form class="row container" onsubmit="addProduct(event)">
         <div class="col-3 d-flex align-items-center">
           <label>Name</label>
           <input required id ="name" type="text" class="form-control" placeholder="Samsung Galaxy S10 Cellphone">
@@ -27,16 +28,13 @@
         </div>
         <div class="col-2 d-flex align-items-center">
           <label>Image</label>
-          <input required id ="image" type="text" class="form-control" placeholder="Insert the URL here">
+          <input required id ="image-url" type="text" class="form-control" placeholder="Insert the URL here">
         </div>
         <div class="col-2 d-flex align-items-center">
           <label>Price</label>
           <input required id ="price" type="text" class="form-control" placeholder="EUR">
           <button class="btn btn-primary ms-2">Add</button>
         </div>
-        
-
-
       </form>  
 
 
