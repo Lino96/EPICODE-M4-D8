@@ -9,7 +9,7 @@ const image = document.querySelector("#image")
 const price = document.querySelector("#price")
 
 async function getProduct() {
-    const response = await fetch("https://striveschool-api.herokuapp.com/api/product/",{
+    const response = await fetch("https://striveschool-api.herokuapp.com/api/product",{
         headers:{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI2ZDgxNzBiZGRlZDAwMTg5YTc5NDAiLCJpYXQiOjE2OTcwNDQ1MDMsImV4cCI6MTY5ODI1NDEwM30._TP5YFCbRw75Bl49Ibe-6aEPI2t7TqVA3KPRtx9BP-Q"
         }
@@ -21,7 +21,7 @@ async function getProduct() {
 
 async function addProduct(event) {
     event.preventDefault()
-    const response = await fetch("https://striveschool-api.herokuapp.com/api/product/",{
+    const response = await fetch("https://striveschool-api.herokuapp.com/api/product",{
         
         method: "POST",
         body: JSON.stringify({
@@ -67,13 +67,5 @@ row.innerHTML = data.map(({ name, description, brand, image, price }) => `
     `).join("")
 }
 
-Window.onload = async function () {
-    try {
-        const productData = await getProduct()
-        displayProducts(productData)
-    }
-    catch(error) {
-        console.log(error)
-    }
-}
+
 
