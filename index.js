@@ -43,9 +43,12 @@ async function addProduct(event) {
     if(response.ok) {
         const data = await getProduct()
         displayProducts(data)
+        for (const field of [name, description, brand, image, price]) {
             field.value = ""
         }
     }
+}
+
 
 
 function displayProducts(data) {
